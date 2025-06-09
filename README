@@ -1,4 +1,4 @@
-This github repository consists of multiple test files and a final code file which we used for our demo for the motors, flex sensors, and imu.
+*** This github repository consists of multiple test files and a final code file which we used for our demo for the motors, flex sensors, and imu.
 
 motor-control.py was base code from the adafruit website which buzzes the motor trying out each motor vibration effect.
 https://learn.adafruit.com/adafruit-drv2605-haptic-controller-breakout/python-circuitpython
