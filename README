@@ -1,0 +1,19 @@
+This github repository consists of multiple test files and a final code file which we used for our demo for the motors, flex sensors, and imu.
+
+motor-control.py was base code from the adafruit website which buzzes the motor trying out each motor vibration effect.
+https://learn.adafruit.com/adafruit-drv2605-haptic-controller-breakout/python-circuitpython
+
+flextomot.py tries to link the flex sensor to the motor so when one flex sensor bends to a certain point, it vibrates one motor.
+
+testa2.py was our attempt at testing analog inputs from different channels. We would change the ADS.P# value whenever we connected the physical flex sensor to another channel.
+
+2flextomot.py links two flex sensors to two motors.
+
+3flextomot.py attemps to map three flex sensors to three motors, but the analog values seemed inconsistent with three flex sensors and the motors did not start accordingly.
+
+bno55_test.py was our first attempt at trying to read data from the imu and this code was an example from the adafruit website. This code should print out all the data the imu sensors collect.
+https://learn.adafruit.com/adafruit-bno055-absolute-orientation-sensor/python-circuitpython
+
+imumux.py starts all the motors if there is a sudden jerk motion with the imu.
+
+final.py is the final code iteration for the glove. It is the code that was shown during the demo. This code maps two flex sensors to two motors and will start the vibration when either of them flex. It will also vibrate if there is a sudden jerk motion. This code is basically a mash up of the previous tests into one.
